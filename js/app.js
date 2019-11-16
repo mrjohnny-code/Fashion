@@ -26,23 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 });
 
-//lazyImages.setAttribute('src', 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');
+//Preloader and animation
 document.body.onload = function() {
-
-	//Images
-	// var images = document.querySelectorAll('.lazy');
-		
-	// console.log(images);
-	
-	// for (var i = 0; i < images.length; i++) {
-	// 	images[i].setAttribute('background', 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');
-
-	// 	images[i].setAttribute('width', images[i].naturalWidth);
-	// 	images[i].setAttribute('height', images[i].naturalHeight);
-
-	// 	//console.log(images[i].clientWidth);
-	// 	//console.log(images[i].clientHeight);
-	// }
 
 	setTimeout(function() {
 
@@ -50,17 +35,12 @@ document.body.onload = function() {
 		var preloader = document.getElementById('preloader');
 			preloader.style.display = 'none';
 
-		if(document.readyState == 'complete') {
-			wow = new WOW({
-				offset: 120,
-				mobile: false
-			})
-			wow.init();
-		}
-
-		//Animate WOW
-		
-		
+		//Animate wow
+		wow = new WOW({
+			offset: 120,
+			mobile: false
+		})
+		wow.init();
 
 	}, 600)
 }
@@ -155,17 +135,4 @@ $(document).ready(function(){
 
 	}).eq(0).addClass("active");
 
-
-	// //Images
-	// var images = $('img.lazy');
-	// 	images.attr('background', 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');
-	// console.log(images.parent().parent());
-	
-	// for (var i = 0; i < images.length; i++) {
-	// 	images.attr('width', images[i].naturalWidth);
-	// 	images.attr('height', images[i].naturalHeight);
-
-	// 	//console.log(images[i].clientWidth);
-	// 	//console.log(images[i].clientHeight);
-	// }
 });
