@@ -1,0 +1,76 @@
+@import "fonts";
+@import "_variables";
+@import "_preloader";
+
+body {
+	margin: 0;
+
+	font-family: $font_sans;
+	font-size: 14px;
+	color: $black;
+	background-color: $background;
+
+	-webkit-font-smoothing: antialiased;
+
+	&.no_scroll {
+		overflow: hidden;
+	}
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+p {
+	margin: 0 0 10px;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Container */
+.container {
+	width: 100%;
+	max-width: 1210px;
+
+	margin: 0 auto;
+
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Button */
+.btn {
+	display: inline-block;
+	padding: 14px 46px;
+
+	color: $white;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+	outline: none;
+
+	white-space: nowrap;
+
+	background-color: $cream;
+
+	transition: background-color .1s linear;
+
+	&:hover {
+		background-color: darken($cream, 10%);
+	}
+
+}
+
+@import "main/_header";
+@import "main/_banner";
+@import "main/_featured";
+@import "main/_last";
+@import "main/_footer";
+@import "_modals";

@@ -1,0 +1,228 @@
+/* Banner */
+.banner {
+	margin-top: 20px;
+
+	&__inner {
+		.banner__block {
+			display: flex;
+
+			margin: -10px;
+
+			@media only screen and (max-width: 700px) {
+				flex-direction: column;
+
+				max-width: 300px;
+				margin: 0 auto;
+			}
+
+			.banner__image {
+				transition: transform .1s linear;
+			}
+
+			.banner__left {
+				position: relative;
+				margin: 10px;
+
+				overflow: hidden;
+
+				&:hover .banner__image{
+					transform: scale(1.05);
+				}
+
+				&_content {
+					width: 100%;
+					height: 100%;
+
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 1;
+
+					background-color: rgba($content_background, .4);
+
+					.banner__left_block {
+						position: absolute;
+						top: 60%;
+						left: 50%;
+						z-index: 2;
+
+						transform: translateX(-50%);
+
+						text-align: center;
+
+						.content__suptitle {
+							font-size: 30px;
+							font-weight: 700;
+							text-transform: uppercase;
+							letter-spacing: 0.1em;
+						}
+
+						.content__title {
+							margin-bottom: 20px;
+
+							font-size: 18px;
+							font-weight: 400;
+							letter-spacing: 0.4em;
+
+							@media only screen and (max-width: 900px) {
+								font-size: 16px;
+							}
+						}
+						.banner__btn {
+							@media only screen and (max-width: 900px) {
+								padding: 10px 20px;
+							}
+						}
+					}
+					
+				}// /.banner__left_content
+			}// /.banner__left
+			.banner__right {
+				margin: 10px;
+
+				.banner__top {
+					display: flex;
+
+					margin-bottom: 20px;
+
+					@media only screen and (max-width: 700px) {
+						flex-direction: column;
+					}
+
+					&_left {
+						position: relative;
+						cursor: pointer;
+
+						overflow: hidden;
+
+						&:hover .banner__image{
+							transform: scale(1.05);
+						}
+
+						@media only screen and (max-width: 700px) {
+							margin-bottom: 20px;
+						}
+
+						.banner__label {
+							border-style: solid;
+							border-width: 40px 60px 0 0;
+							border-color: $cream transparent transparent transparent;
+
+							position: absolute;
+							top: 0;
+							left: 0;
+							z-index: 2;
+
+							&_text {
+								color: $white;
+								font-size: 12px;
+								font-weight: 400;
+								text-transform: uppercase;
+								letter-spacing: 0.5em;
+
+								position: absolute;
+								top: -33px;
+								left: 0;
+								z-index: 5;
+
+								transform: rotate(-33deg);
+							}
+						}
+					}// /.banner__top_left
+					&_right {
+						margin-left: 20px;
+
+						position: relative;
+						cursor: pointer;
+
+						overflow: hidden;
+
+						&:hover .banner__image{
+							transform: scale(1.05);
+						}
+
+						@media only screen and (max-width: 700px) {
+							margin: 0;
+						}
+
+						.banner__right_content {
+							width: 100%;
+							height: 100%;
+
+							position: absolute;
+							top: 0;
+							left: 0;
+							z-index: 1;
+
+							background-color: rgba($content_background, .4);
+
+							.banner__right_block {
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								z-index: 2;
+
+								transform: translate(-50%, -50%);
+
+								text-transform: uppercase;
+								text-align: center;
+
+								.content__suptitle {
+									font-size: 21px;
+									font-weight: 300;
+									letter-spacing: 0.9em;
+								}
+								.content__title {
+									margin-bottom: 20px;
+
+									font-size: 48px;
+									font-weight: 700;
+									line-height: 48px;
+
+									@media only screen and (max-width: 900px) {
+										font-size: 32px;
+									}
+								}
+								.banner__btn {
+									@media only screen and (max-width: 900px) {
+										padding: 10px 20px;
+									}
+								}
+							}
+						}
+					}// /.banner__top_right
+				}// /.banner__top
+				.banner__bottom {
+					display: flex;
+
+					@media only screen and (max-width: 700px) {
+						flex-direction: column;
+					}
+
+					&_left {
+						overflow: hidden;
+
+						&:hover .banner__image{
+							transform: scale(1.05);
+						}
+					}
+
+					&_right {
+						margin-left: 20px;
+
+						overflow: hidden;
+
+						&:hover .banner__image{
+							transform: scale(1.05);
+						}
+
+						@media only screen and (max-width: 700px) {
+							margin: 0;
+							margin-top: 20px;
+						}
+					}
+				}
+			}// /.banner__right
+		}// /.banner_block
+	}// /.banner__inner
+}// /.banner

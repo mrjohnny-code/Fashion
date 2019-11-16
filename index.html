@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fashion clothes</title>
+
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	
+	<link rel="stylesheet" href="scss/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+	<div class='sk-chasing-dots'>
+		<div class='sk-child sk-dot-1'></div>
+		<div class='sk-child sk-dot-2'></div>
+	</div>
+</div>
+
+
+<!-- Header -->
+<header class="header wow fadeIn" data-wow-delay=".1s">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__top">
+				<div class="header__left wow fadeInLeftBig" id="header_left">
+					<div class="header__user">
+						<img class="header__user_icon" src="img/icons/header_user_icon.png" alt="">
+						<div class="header__user_text">
+							<a class="header__user_link" href="#" data-modal="#modal_login">Sign in</a>
+						</div>
+					</div>
+					<div class="header__phone">
+						<img class="header__phone_icon" src="img/icons/header_phone_icon.png" alt="">
+						<a class="header__phone_num" href="tel:+80001234567">+8 000 123 45 67</a>
+					</div>
+				</div>
+				<div class="header__center wow fadeIn" data-wow-duration="2s">
+					<a href="#"><img src="img/header_logo.png" alt=""></a>
+				</div>
+				<div class="header__right wow fadeInRightBig" id="header_right">
+					<div class="header__wishlist">
+						<img class="header__wishlist_icon" src="img/icons/header_wishlist_icon.png" alt="">
+						<div class="header__wishlist_text">WISHLIST: <span class="text__color">4</span></div>
+					</div>
+					<div class="header__basket">
+						<div class="header__basket_block">
+							<img class="header__basket_icon" src="img/icons/header_cart_icon.png" alt="">
+							<span class="header__basket_count">1</span>
+						</div>
+						<div class="header__basket_text">CART: <span class="header_price">$345.00</span></div>
+					</div>
+				</div>
+			</div><!-- /.header__top -->
+			<div class="header__bottom wow fadeInUp">
+				<nav class="header__nav" id="nav">
+					<a class="header__nav_link" href="#">Jackets</a>
+					<a class="header__nav_link" href="#">Sweaters</a>
+					<a class="header__nav_link" href="#">Dresses</a>
+					<a class="header__nav_link" href="#">Skirts</a>
+					<a class="header__nav_link" href="#">Pants</a>
+					<a class="header__nav_link" href="#">Shorts</a>
+					<a class="header__nav_link" href="#">Shoes</a>
+					<a class="header__nav_link" href="#">Accessories</a>
+				</nav>
+			</div>
+			
+			<div class="header__burger" id="burger">
+				<div class="header__burger_item" id="burger_item"></div>
+			</div>
+		</div><!-- /.header__inner -->
+	</div><!-- /.container -->
+</header><!-- /.header -->
+
+
+<!-- Banner -->
+<div class="banner">
+	<div class="container">
+		<div class="banner__inner">
+			<div class="banner__block">
+				<div class="banner__left wow zoomIn">
+					<a class="banner__link" href="#"><img class="banner__image lazy" src="img/banner/may_thumb.gif" data-src="img/banner/may_collection.jpg" alt=""></a>
+					<div class="banner__left_content">
+						<div class="banner__left_block">
+							<div class="content__suptitle">May</div>
+							<div class="content__title">Collection</div>
+							<a class="btn banner__btn" href="#">See Products</a>
+						</div>
+					</div>
+				</div>
+				<div class="banner__right">
+					<div class="banner__top">
+						<div class="banner__top_left wow zoomIn">
+							<a class="banner__link" href="#"><img class="banner__image lazy" src="img/banner/sale_thumb.gif" data-src="img/banner/sale.jpg" alt=""></a>
+							<div class="banner__label"><div class="banner__label_text">Sale</div></div>
+						</div>
+						<div class="banner__top_right wow wow zoomIn">
+							<a class="banner__link" href="#"><img class="banner__image lazy" src="img/banner/arrivals_thumb.gif" data-src="img/banner/arrivals.jpg" alt=""></a>
+							<div class="banner__right_content">
+								<div class="banner__right_block">
+									<div class="content__suptitle">New</div>
+									<div class="content__title">Arrivals</div>
+									<a class="btn banner__btn" href="#">See Products</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="banner__bottom">
+						<div class="banner__bottom_left wow wow zoomIn">
+							<a class="banner__link" href="#"><img class="banner__image lazy" src="img/banner/bags_thumb.gif" data-src="img/banner/bags.jpg" alt=""></a>
+						</div>
+						<div class="banner__bottom_right wow wow zoomIn">
+							<a class="banner__link" href="#"><img class="banner__image lazy" src="img/banner/shoes_thumb.gif" data-src="img/banner/shoes.jpg" alt=""></a>
+						</div>
+					</div>
+				</div><!-- /.banner__right -->
+			</div><!-- /.banner__block -->
+		</div><!-- /.banner__inner -->
+	</div><!-- /.container -->
+</div><!-- /.banner -->
+
+
+<!-- Featured -->
+<div class="featured">
+	<div class="container">
+		<div class="featured__inner">
+			<div class="featured__top wow fadeInLeftBig">
+				<div class="featured__top_title">Featured</div>
+				<div class="featured__top_subtitle">“Whoever said money can’t buy happiness simply didn’t know WHERE TO SHOP”</div>
+			</div>
+			<div class="featured__content">
+				<div class="featured__content_item">
+					<div class="featured__content_item_block wow fadeInLeftBig" data-wow-delay=".2s">
+						<div class="content__image">
+							<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/products/1.jpg" alt=""></a>
+						</div>
+						<a class="content__title" href="#">Blazer slimfit</a>
+						<div class="content__price">$279.00</div>
+						<a class="btn featured__btn" href="#">Add to cart</a>
+					</div>
+				</div>
+
+				<div class="featured__content_item">
+					<div class="featured__content_item_block wow fadeInLeftBig">
+						<div class="content__image">
+							<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/products/2.jpg" alt=""></a>
+						</div>
+						<a class="content__title" href="#">Slim pants</a>
+						<div class="content__price"><span class="old_price">$329.00</span>$279.00</div>
+						<a class="btn featured__btn" href="#">Add to cart</a>
+					</div>
+				</div>
+
+				<div class="featured__content_item">
+					<div class="featured__content_item_block wow fadeInRightBig">
+						<div class="content__image">
+							<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/products/3.jpg" alt=""></a>
+						</div>
+						<a class="content__title" href="#">Sweatshirt</a>
+						<div class="content__price">$279.00</div>
+						<a class="btn featured__btn" href="#">Add to cart</a>
+					</div>
+				</div>
+
+				<div class="featured__content_item">
+					<div class="featured__content_item_block wow fadeInRightBig" data-wow-delay=".2s">
+						<div class="content__image">
+							<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/products/4.jpg" alt=""></a>
+						</div>
+						<a class="content__title" href="#">Formal blouse</a>
+						<div class="content__price">$279.00</div>
+						<a class="btn featured__btn" href="#">Add to cart</a>
+					</div>
+				</div>
+
+				<div class="featured__content_item">
+					<div class="featured__content_item_block wow fadeInLeftBig" data-wow-delay=".2s">
+						<div class="content__image">
+							<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/products/5.jpg" alt=""></a>
+						</div>
+						<a class="content__title" href="#">Women army pants</a>
+						<div class="content__price">$279.00</div>
+						<a class="btn featured__btn" href="#">Add to cart</a>
+					</div>
+				</div>
+
+				<div class="featured__content_item">
+					<div class="featured__content_item_block wow fadeInLeftBig">
+						<div class="content__image">
+							<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/products/6.jpg" alt=""></a>
+						</div>
+						<a class="content__title" href="#">Elegant dress</a>
+						<div class="content__price">$279.00</div>
+						<a class="btn featured__btn" href="#">Add to cart</a>
+					</div>
+				</div>
+
+				<div class="featured__content_item">
+					<div class="featured__content_item_block wow fadeInRightBig">
+						<div class="content__image">
+							<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/products/7.jpg" alt=""></a>
+						</div>
+						<a class="content__title" href="#">Collar chiffon</a>
+						<div class="content__price"><span class="old_price">$329.00</span>$279.00</div>
+						<a class="btn featured__btn" href="#">Add to cart</a>
+					</div>
+				</div>
+
+				<div class="featured__content_item">
+					<div class="featured__content_item_block wow fadeInRightBig" data-wow-delay=".2s">
+						<div class="content__image">
+							<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/products/8.jpg" alt=""></a>
+						</div>
+						<a class="content__title" href="#">Slim jeans</a>
+						<div class="content__price">$279.00</div>
+						<a class="btn featured__btn" href="#">Add to cart</a>
+					</div>
+				</div>				
+			</div>
+			<div class="featured__more wow fadeIn"><span class="more_text">+ Load more products</span></div>
+		</div><!-- /.featured__inner -->
+	</div><!-- /.container -->
+</div><!-- /.featured -->
+
+
+<!-- Last Viewed -->
+<div class="last">
+	<div class="container">
+		<div class="last__inner">
+			<div class="last__top wow fadeInUp">Latest viewed</div>
+			<div class="last__content">
+				<div class="last__content_item wow fadeInUp">
+					<div class="content__image">
+						<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/last_viewed/1.jpg" alt=""></a>
+					</div>
+					<a class="content__title" href="#">T-SHIRT BLUE</a>
+					<div class="content__price">$279.00</div>				
+				</div>
+
+				<div class="last__content_item wow fadeInUp" data-wow-delay=".1s">
+					<div class="content__image">
+						<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/last_viewed/2.jpg" alt=""></a>
+					</div>
+					<a class="content__title" href="#">BASIC T-SHIRT</a>
+					<div class="content__price"><span class="old_price">$329.00</span>$279.00</div>				
+				</div>
+
+				<div class="last__content_item wow fadeInUp" data-wow-delay=".15s">
+					<div class="content__image">
+						<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/last_viewed/3.jpg" alt=""></a>
+					</div>
+					<a class="content__title" href="#">COLLAR VERTICAL STRIPES</a>
+					<div class="content__price">$279.00</div>				
+				</div>
+
+				<div class="last__content_item wow fadeInUp" data-wow-delay=".2s">
+					<div class="content__image">
+						<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/last_viewed/4.jpg" alt=""></a>
+					</div>
+					<a class="content__title" href="#">COLOR SHIRT</a>
+					<div class="content__price">$279.00</div>				
+				</div>
+
+				<div class="last__content_item wow fadeInUp" data-wow-delay=".25s">
+					<div class="content__image">
+						<a href="#"><img class="content__img lazy" src="img/thumb_image_1x1.gif" data-src="img/last_viewed/5.jpg" alt=""></a>
+					</div>
+					<a class="content__title" href="#">VERY ELEGANT SHIRT</a>
+					<div class="content__price">$279.00</div>				
+				</div>
+			</div><!-- /.last__content -->
+		</div><!-- /.last__inner -->
+	</div><!-- /.container -->
+</div><!-- /.last -->
+
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__top wow flipInX" data-wow-delay=".1s"><img class="footer__top_img lazy" src="img/thumb_image_1x1.gif" data-src="img/footer__logo.png" alt=""></div>
+			<div class="footer__content">
+				<div class="footer__content_item connect wow fadeInLeftBig" data-wow-delay=".2s">
+					<div class="content__title">CONNECT WITH US</div>
+					<div class="content__block">
+						<div class="block__title">DAVELYNINC - ECOMMERCE</div>
+						<div class="block__address">Kebon jeruk, Jakarta</div>
+						<a class="footer__phone" href="tel:+80001234567">+8 000 123 45 67</a>
+						<a class="footer__mail" href="#">fashionholic@davelyn.com</a>
+
+						<div class="social__block">
+							<a class="social__link" href="#"><img class="lazy" src="img/thumb_image_1x1.gif" data-src="img/footer_icons/facebook.png" alt=""></a>
+							<a class="social__link" href="#"><img class="lazy" src="img/thumb_image_1x1.gif" data-src="img/footer_icons/twitter.png" alt=""></a>
+							<a class="social__link" href="#"><img class="lazy" src="img/thumb_image_1x1.gif" data-src="img/footer_icons/dribbble.png" alt=""></a>
+							<a class="social__link" href="#"><img class="lazy" src="img/thumb_image_1x1.gif" data-src="img/footer_icons/google.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__content_item sales wow fadeInLeftBig">
+					<div class="content__title">HOLIDAY SALES</div>
+					<div class="content__block">
+						<div class="content__block_item">
+							<div class="item__image">
+								<a href="#"><img class="lazy" src="img/thumb_image_1x1.gif" data-src="img/placehold.png" alt=""></a>
+							</div>
+							<div class="item__text">
+								<a class="item__title" href="#">CHANEL - FASHION BAG</a>
+								<div class="item__price">$189.00</div>
+							</div>
+						</div>
+
+						<div class="content__block_item">
+							<div class="item__image">
+								<a href="#"><img class="lazy" src="img/thumb_image_1x1.gif" data-src="img/placehold.png" alt=""></a>
+							</div>
+							<div class="item__text">
+								<a class="item__title" href="#">GUCCI - FASHION BAG</a>
+								<div class="item__price">$189.00</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__content_item arrivals wow fadeInRightBig">
+					<div class="content__title">NEW ARRIVALS</div>
+					<div class="content__block">
+						<div class="content__block_item">
+							<div class="item__image">
+								<a href="#"><img class="lazy" src="img/thumb_image_1x1.gif" data-src="img/placehold.png" alt=""></a>
+							</div>
+							<div class="item__text">
+								<a class="item__title" href="#">CALVIN KLEIN - LOW SLIM JEANS</a>
+								<div class="item__price">$189.00</div>
+							</div>
+						</div>
+
+						<div class="content__block_item">
+							<div class="item__image">
+								<a href="#"><img class="lazy" src="img/thumb_image_1x1.gif" data-src="img/placehold.png" alt=""></a>
+							</div>
+							<div class="item__text">
+								<a class="item__title" href="#">VICTORIA S - LINGERIE</a>
+								<div class="item__price">$189.00</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__content_item support wow fadeInRightBig" data-wow-delay=".2s">
+					<div class="content__title">OUR SUPPORT</div>
+					<div class="content__block">
+						<a class="content__block_link" href="#">Terms & Conditions</a>
+						<a class="content__block_link" href="#">Delivery</a>
+						<a class="content__block_link" href="#">Secure Payment</a>
+						<a class="content__block_link" href="#">Refunds</a>
+						<a class="content__block_link" href="#">Track Orders</a>
+					</div>
+				</div>
+			</div><!-- /.footer__content -->
+		</div><!-- /.footer__inner -->
+	</div><!-- /.container -->
+</footer><!-- /.footer -->
+
+
+<!-- Modals -->
+<div class="modal__login" id="modal_login">
+	<div class="modal__dialog">
+		<a class="modal__close__btn" href="#" data-close>+</a>
+		<div class="modal__content">
+			<div class="modal__tabs">
+				<a class="modal__title active" href="#tab_login">Login</a>
+				<a class="modal__title" href="#tab-2">Sign Up</a>
+			</div>
+			<div class="modal__tab_content login" id="tab_login">
+				<form class="modal__form">
+					<div class="input__block">
+						<input class="modal__input name" id="login_name" type="text" required autocomplete="off">
+						<label class="modal__label" for="login_name">Name</label>
+					</div>
+					<div class="input__block">
+						<input class="modal__input pass" id="login_password" type="password" required autocomplete="off">
+						<label class="modal__label" for="login_password">Password</label>
+					</div>
+					<a class="btn login__btn" href="#">Login</a>
+				</form>
+			</div>
+			<div class="modal__tab_content signup" id="tab_signup">
+				<form class="modal__form">
+					<div class="input__block">
+						<input class="modal__input name" id="sign_name" type="text" required autocomplete="off">
+						<label class="modal__label" for="sign_name">Name</label>
+					</div>
+					<div class="input__block">
+						<input class="modal__input pass" id="sign_password" type="password" required autocomplete="off">
+						<label class="modal__label" for="sign_password">Password</label>
+					</div>
+					<div class="input__block">
+						<input class="modal__input pass" id="sign_email" type="text" required autocomplete="off">
+						<label class="modal__label" for="sign_email">Email</label>
+					</div>
+					<a class="btn login__btn" href="#">Signup</a>
+				</form>
+			</div>
+		</div><!-- /.modal__content -->
+	</div><!-- /.modal__dialog -->
+</div><!-- /.modal__login -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/wow.min.js"></script>
+
+<script src="js/app.js"></script>
+</body>
+</html>
